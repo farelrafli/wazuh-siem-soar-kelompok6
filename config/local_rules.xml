@@ -1,0 +1,24 @@
+<!-- local_rules.xml — Custom Wazuh Rules untuk DDoS Detection -->
+<!-- Kelompok 6 MIKS ITS -->
+<!-- Letakkan di: /var/ossec/etc/rules/local_rules.xml -->
+
+<group name="ddos,web,">
+
+  <!-- Rule: >200 request dari 1 IP dalam 10 detik -> level 10 -->
+  <rule id="100200" level="10" frequency="200" timeframe="10">
+    <if_matched_sid>31100</if_matched_sid>
+    <same_source_ip/>
+    <description>Possible DDoS: high request rate from single IP</description>
+    <mitre>
+      <id>T1499</id>
+    </mitre>
+  </rule>
+
+  <!-- Rule: HTTP flood confirmed -> level 12, trigger SOAR -->
+  <rule id="100201" level="12" frequency="100" timeframe="10">
+    <if_matched_sid>31153</if_matched_sid>
+    <same_source_ip/>
+    <description>DDoS Confirmed: HTTP flood detected, auto-block triggered</description>
+  </rule>
+
+</group>
