@@ -1,6 +1,6 @@
 # Wazuh SIEM + SOAR — Group Task #1
 
-**Kelompok 6 | Manajemen Insiden Keamanan Siber (MIKS)**
+**Kelompok 6 | SOC Security Operation Center**
 **Institut Teknologi Sepuluh Nopember (ITS)**
 
 ## Anggota Kelompok
@@ -9,7 +9,7 @@
 |------|-----|-------|
 | Muhammad Farrel Rafli Al Fasya | 5027241075 | Azure Infrastructure Setup, Wazuh Manager Installation, Laporan |
 | Mohammad Abyan Ranuaji | 5027241106 | Wazuh Agent Configuration, SOAR Implementation |
-| Ari | - | DDoS Simulation & Testing, Alert Analysis, Demo |
+| Muhammad Ardiansyah Tri Wibowo | 5027241091 | DDoS Simulation & Testing, Alert Analysis |
 
 ## Deskripsi Proyek
 
